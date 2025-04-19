@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: url('https://github.com/Kirti-salunkhe/birthday_web/blob/main/bday.gif?raw=true') no-repeat center center fixed;
+    background-size: cover;
+    color: #ffffff;
+}
+
+header {
+    text-align: center;
+    padding: 50px 0;
+}
+
+h1 {
+    font-size: 3em;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.quote {
+    font-size: 1.5em;
+    font-style: italic;
+    margin: 20px 0;
+    opacity: 0;
+    animation: slideIn 1s forwards;
+}
+
+.photo-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.photo-grid img {
+    width: 200px;
+    height: auto;
+    margin: 10px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.photo-grid img:hover {
+    transform: scale(1.1);
+}
+
+.video-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.video-container video {
+    width: 80%;
+    border-radius: 10px;
+}
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
