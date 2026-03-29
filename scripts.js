@@ -1,6 +1,6 @@
 // This file contains JavaScript code to implement interactive features and animations on the birthday wish website.
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const quotes = [
         "Happy Birthday! May your wishes come true.",
         "Another year older, another year wiser!",
@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Media playback functionality
     const videoElements = document.querySelectorAll('video');
     videoElements.forEach(video => {
-        video.addEventListener('play', function() {
+        video.addEventListener('play', function () {
             videoElements.forEach(v => {
                 if (v !== video) {
                     v.pause();
